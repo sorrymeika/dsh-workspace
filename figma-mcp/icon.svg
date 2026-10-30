@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Figma Desktop MCP">
+  <defs>
+    <linearGradient id="figma-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2b2150"/>
+      <stop offset="1" stop-color="#12102a"/>
+    </linearGradient>
+    <linearGradient id="figma-frame" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#a259ff"/>
+      <stop offset="0.5" stop-color="#1abcfe"/>
+      <stop offset="1" stop-color="#0acf83"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#figma-bg)"/>
+  <rect x="15" y="15" width="34" height="34" rx="7" fill="none" stroke="url(#figma-frame)" stroke-width="3"/>
+  <circle cx="15" cy="15" r="3.4" fill="#1abcfe"/>
+  <circle cx="49" cy="15" r="3.4" fill="#a259ff"/>
+  <circle cx="15" cy="49" r="3.4" fill="#0acf83"/>
+  <circle cx="49" cy="49" r="3.4" fill="#ff7262"/>
+  <path d="M24 40 L32 24 L40 40" fill="none" stroke="#f8fafc" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M27.4 34 H36.6" fill="none" stroke="#f8fafc" stroke-width="3" stroke-linecap="round"/>
+</svg>

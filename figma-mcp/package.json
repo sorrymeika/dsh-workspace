@@ -1,0 +1,22 @@
+{
+  "name": "@local/dsh-figma-mcp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Figma Desktop MCP 连接：把 Figma 桌面版 Dev Mode MCP server（http://127.0.0.1:3845/mcp）的工具接入 DSH",
+  "type": "module",
+  "exports": {
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

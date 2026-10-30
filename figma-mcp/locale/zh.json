@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Figma Desktop MCP",
+    "description": "连接 Figma 桌面版的 Dev Mode MCP server（127.0.0.1:3845），把当前选中的设计、变量、组件代码映射和截图作为工具交给 Agent。Figma 未启动时自动重连，无需重启 DSH。"
+  }
+}

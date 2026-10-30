@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Figma Desktop MCP",
+    "description": "Connects the Figma desktop Dev Mode MCP server (127.0.0.1:3845) so the agent can read the current selection, variables, Code Connect mappings, and screenshots. Reconnects automatically, so DSH can start before Figma."
+  }
+}

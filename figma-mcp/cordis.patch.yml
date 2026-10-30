@@ -1,0 +1,23 @@
+# Figma Desktop MCP 连接（配置型 bundle，无 Host / Client 代码）
+#
+# Figma 桌面版 -> 菜单 Figma > Preferences > Enable Dev Mode MCP Server
+# 打开后本地端点固定为 http://127.0.0.1:3845/mcp（streamable HTTP）。
+# 工具以 mcp__figma-desktop__<tool> 的名字注册给 Agent。
+- insert:
+    - id: figma-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: figma-desktop
+        transport: streamable-http
+        url: http://127.0.0.1:3845/mcp
+        # 大画板的设计上下文抓取较慢，给足超时
+        toolCallTimeoutMs: 120000
+        # Figma 没开时不要拖垮 DSH 启动，靠下面的 reconnect 兜底
+        failOnStartupError: false
+        reconnect:
+          enabled: true
+          initialDelayMs: 1000
+          maxDelayMs: 30000
+          # 约 35 天的重连预算（每 30s 一次探测，成本可忽略）：DSH 长期开着、
+          # 之后才打开 Figma，也能自动接上而不用重启 DSH
+          maxAttempts: 100000

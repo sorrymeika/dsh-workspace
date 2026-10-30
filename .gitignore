@@ -1,0 +1,17 @@
+# 依赖与运行时产物
+node_modules/
+.pnpm-store/
+
+# 本机运行时状态（隧道 URL、通知时间等）
+.state/
+**/.state/
+
+# 日志与系统文件
+*.log
+.DS_Store
+
+# 本地凭据/环境（若有）
+.env
+.env.*
+*.pem
+*.key

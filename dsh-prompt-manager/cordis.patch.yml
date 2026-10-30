@@ -1,0 +1,3 @@
+- insert:
+    - id: prompt-manager
+      name: '@local/dsh-prompt-manager'

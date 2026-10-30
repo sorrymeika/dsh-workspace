@@ -1,0 +1,7 @@
+# dsh-tunnel-notify bundle patch
+#
+# 由 `dsh plugin add` 把它自己插入组合树。没有硬 inject：
+# 宿主半边只读文件 + 定时器 + 出站 HTTP，不依赖任何 DSH 内部服务。
+- insert:
+    - id: tunnel-notify
+      name: "@local/dsh-tunnel-notify"
